@@ -7,6 +7,7 @@ substitutions:
   domain: ".local"
   ap_password: "12345678"
   ota_password: ""
+  wifi_security: WPA2
 
 # EN:  Minimal ESPHOME config.
 # RU:  Минимальная конфигурация ESPHOME.
@@ -14,7 +15,7 @@ substitutions:
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
-  min_version: 2024.7.0
+  min_version: 2025.11.0
   platformio_options:
     upload_speed: 2000000
 
@@ -28,6 +29,7 @@ logger:
 # URL: https://esphome.io/components/wifi
 wifi:
   domain: ${domain}
+  min_auth_mode: ${wifi_security}
   ap:
     password: ${ap_password}
 
