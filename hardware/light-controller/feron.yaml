@@ -21,6 +21,7 @@ light:
 
 remote_transmitter:
   pin: 25
+  non_blocking: true
   carrier_duty_percent: 100%
 
 #api:
