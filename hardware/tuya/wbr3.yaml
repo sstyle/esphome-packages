@@ -1,5 +1,5 @@
 rtl87xx:
-  board: wbr3
+  board: generic-rtl8720cf-2mb-896k # wbr3 not supported yet, but this is close enough
 
 logger:
   baud_rate: 0
